@@ -1,6 +1,6 @@
 function Team(name, startPosition, division) {
   this.name = name;
-  this.currentPosition = startPosition;
+  this.currentIndexPosition = startIndexPosition;
   this.division = division;
   this.played = 0;
   this.won = 0;
@@ -12,6 +12,10 @@ function Team(name, startPosition, division) {
   this.points = 0;
 }
 
-Team.prototype.totalPoints = function() {
+Team.prototype.ranking = function() {
+  // ranking position in own division
+}
 
+Team.prototype.totalPoints = function() {
+  // total points matches: won = 2 points, draw = 1 point, lost = 0 points
 }
