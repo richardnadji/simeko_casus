@@ -40,3 +40,4 @@ const teams = [
 // create league
 const league = new League('voorjaar', '2017', teams)
 // display tables
+LeagueUI.displayTitle();

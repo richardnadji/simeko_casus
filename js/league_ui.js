@@ -1,10 +1,14 @@
-const LeagueUI = {
+let LeagueUI = {
   // display functions
+  displayTitle: function() {
+    const title = league.title + ' ' + league.year;
+    this.populateIdWithHTML('title', title);
+  },
   displayAllTeams: function() {
     const teams = league.teams;
 
     for(let i = 0; i < teams.length; i++) {
-        this.populateIdWithHTML("tables", teams[i].toHTML());
+        this.populateIdWithHTML('listAllTeams', teams[i].toHTML());
     }
   },
   // helpers
@@ -13,4 +17,4 @@ const LeagueUI = {
     element.innerHTML = text;
   },
   // handlers
-}
+};

@@ -42,6 +42,6 @@ Team.prototype.toHTML = function() {
   htmlString += this.goalDifference;
   htmlString += ' | ';
   htmlString += this.points;
-  htmlString '</span></li>';
+  htmlString += '</span></li>';
   return htmlString;
-}
+};
