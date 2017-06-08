@@ -3,9 +3,9 @@ const LeagueUI = {
   displayAllTeams: function() {
     const teams = league.teams;
 
-      for(let i = 0; i < teams.length; i++) {
-          this.populateIdWithHTML("tables", teams[i].toHTML());
-      }
+    for(let i = 0; i < teams.length; i++) {
+        this.populateIdWithHTML("tables", teams[i].toHTML());
+    }
   },
   // helpers
   populateIdWithHTML: function(id, text) {
