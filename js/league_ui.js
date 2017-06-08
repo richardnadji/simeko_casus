@@ -6,10 +6,12 @@ let LeagueUI = {
   },
   displayAllTeams: function() {
     const teams = league.teams;
-
-    for(let i = 0; i < teams.length; i++) {
-        this.populateIdWithHTML('listAllTeams', teams[i].toHTML());
+    let allTeams = "";
+    
+    for (let i = 0; i < teams.length; i++) {
+        allTeams += teams[i].toHTML();
     }
+    this.populateIdWithHTML('listAllTeams', allTeams);
   },
   // helpers
   populateIdWithHTML: function(id, text) {

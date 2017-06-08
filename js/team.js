@@ -26,7 +26,6 @@ Team.prototype.toHTML = function() {
   htmlString += ' | ';
   htmlString += this.name;
   htmlString += '<span class="statistics">'
-  htmlString += ' | ';
   htmlString += this.played;
   htmlString += ' | ';
   htmlString += this.won;
